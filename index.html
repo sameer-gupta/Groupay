@@ -1,0 +1,208 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+
+    <title>GrouPay</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Niconne" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet">
+    <!-- Custom -->
+    <script type="text/javascript" src="js/valid.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body >
+
+<div class="container-fluid">
+
+    <div class="row" >
+        <div class="col-md-2"></div>
+        <div class="col-md-8" style="margin: 0px;">
+            <h1 class="titl"><span >Grou</span><span style="color: gold;">Pay</span></h1>
+        </div>
+        <div class="col-nd-2"></div>
+    </div>
+    <br>
+    <br>
+
+
+	<div class="row"  style="margin: 15px">
+		<div class="col-md-2"></div>
+		<div class="col-md-4">
+              <div class="form-group">
+                <input placeholder="Enter Amount to Pay" class="form-control input-lg" id="amt" type="text">
+            </div>
+        </div>
+        <div class="col-md-4">
+              <div class="form-group">
+                <input placeholder="Vendor Phone Number" class="form-control input-lg" id="inputlg" type="text">
+            </div>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+
+    <div style="margin: 15px">
+    <button id="1id" type="button" class="btn btn-info" onclick="go1();" style="margin-left: 570px">Proceed</button>  
+    </div>
+
+
+
+
+                        
+    <br>
+
+    <div class="row" class="hideit" style="display: none;" id="r1">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+
+        <div class="row">
+            <div class="col-md-4">
+            <label>Phone No.</label>
+            </div>
+            <div class="col-md-4">
+                 <label>Amount</label>
+            </div>
+            <div id="10" style="display: none;">
+            <div class="col-md-3" >
+                <label>OTP</label>
+            </div> 
+            </div>
+            <div class="col-md-1" ></div>
+    
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+            <input id="c1p" class="form-control input-md" value="9899785580" /><br>
+            </div>
+            <div class="col-md-4">
+                <input id="c1a" class="form-control input-md" /><br>
+            </div>
+            <div id="11" style="display: none;" class="col-md-3" >
+                <input id="c1o" class="form-control input-md" /><br>
+            </div> 
+            <div class="col-md-1">
+                <img src="tick.png" id="tick1" style="display: none; height:20px;">
+                <img src="cross.png" id="cross1" style="display: none; height:20px;">
+                <br>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-4">
+            <input id="c2p" class="form-control input-md" value="9711496894" /><br>
+            </div>
+            <div class="col-md-4">
+                <input id="c2a" class="form-control input-md" /><br>
+            </div>
+            <div id="12" style="display: none;" class="col-md-3">
+                <input id="c2o" class="form-control input-md" /><br>
+            </div>
+            <div class="col-md-1">
+                <img src="tick.png" id="tick2" style="display: none; height:20px;">
+                <img src="cross.png" id="cross2" style="display: none; height:20px;">
+                <br>
+            </div>
+        </div> 
+
+        <div>
+        <button id="2id" type="button" class="btn btn-info" onclick="go2();" style="margin-left: 350px">Send OTP</button>
+        </div>
+
+        <br>
+
+        <div>
+        <button id="3id" type="button" style="display: none; margin-left: 350px" class="btn btn-info" onclick="pay1();">Just One More Click </button>
+        </div>
+
+        <div id="success" style="display: none;">
+            <h3 style="color:#81C784;font-family: 'Baloo', cursive; margin-left: 300px;">Payment Successful !! </h3>      
+            
+        </div>
+
+        <div id="failure" style="display: none;">
+            <h3 style="color:#DD2C00;font-family: 'Baloo', cursive; margin-left: 335px;">Payment Failure :(</h2>
+            
+        </div>
+
+
+
+
+
+        </div>
+    <div class="col-md-2"></div>
+    </div>
+
+
+
+
+
+
+<div id="x">
+<br><br>
+
+<br><br>
+
+<br><br>
+
+</div>
+
+<br><br>
+
+<br><br>
+
+
+</div>
+<hr>
+
+
+<footer class="footer footer-modified">
+    <div class="row">
+    <div class="col-md-12">  
+        <p class="company">&copy; 2016 GrouPay&nbsp;&nbsp;&nbsp;All Rights Reserved.</p>
+        <div class="footer-icons">
+            <a href="https://www.facebook.com/sameergupta1812" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="https://twitter.com/guptasameer1812" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="https://in.linkedin.com/in/sameer-gupta-68761b107" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a href="https://github.com/sameer-gupta" target="_blank"><i class="fa fa-github"></i></a>
+            <a href="#mail" data-toggle="modal"><i class="fa fa-envelope" style="color: #FFFFFF;"></i></a>
+        </div>
+    </div>
+    </div>
+</footer>
+
+  <!-- Modal -->
+<div class="modal fade bs-example-modal-sm" id="mail" role="dialog">
+<div class="modal-dialog modal-sm">
+<!-- Modal content-->
+    <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button> 
+            <h4 class="modal-title">Mail Us @</h4>
+        </div>
+        <div class="modal-body">
+            <p>sameergupta1812@gmail.com</p>
+        </div>
+    </div>   
+</div>
+</div>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
+

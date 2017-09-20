@@ -1,0 +1,115 @@
+
+html,
+body { 
+  padding: 0;
+  margin: 0;
+  font-family: 'Source Sans Pro';
+  background: #FFFFFF;
+  
+  
+}
+
+
+h1 {
+	font-family: 'Baloo', cursive;
+	font-size: 120px;
+	font-weight: 500;
+	text-align: center;
+	color: 
+	padding: 0px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+
+hr {
+    margin: 0px;
+    border-width: 3.5px;	
+    border-style: solid;
+    border-color: #1FA67A;
+}
+
+
+
+a, a:focus, a:hover, a:active {
+	outline: 0;
+	border-color: red;
+	text-decoration: none;
+}
+
+
+.hideit{	
+	display: none;
+}
+
+.form-control:focus {
+	 border-color: #474747;
+    box-shadow: 0 0 10px #474747;
+
+}
+
+.input-group-addon{
+	color: #ffffff;
+    background: gold;
+    border-color: gold;
+}
+
+
+
+.btn, .btn:focus, .btn:hover, .btn:active {
+	color: #ffffff;
+    font-size: 20px;
+    background: #1FA67A;
+    border-color: #1FA67A;
+    outline: none;
+
+}
+/* while the button is pressed*/
+.btn:active:focus, .btn.active:focus {
+    outline: 0 none;
+    background: #146c4e;
+}
+
+.sp {
+	margin: 35px;
+}
+
+
+
+/* Footer */
+.footer-modified {
+	background-color: #292c2f;
+	padding: 20px;
+	width: 100%;
+	text-align: center;
+}
+.company{
+	color:  #E8F5E9;
+	font-size: 14px;
+	font-weight: 500;
+	margin: 0;
+}
+.footer-icons{
+	margin-top: 15px;
+}
+.footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+
+
+
+
+
